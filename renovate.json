@@ -1,5 +1,14 @@
-{
-  "extends": [
-    "config:base"
-  ]
+module.export = {
+    extends : ['config:base', ':rebaseStalePrs', ':disableRateLimiting'],
+
+    onboarding : false,
+    requireConfig: false,
+
+    includeForks: true,
+
+    rangeStrategy : 'bump',
+
+    token:'9d6e102e5eb76caa378f4baaeba46c49edc6fcfb',
+
+    repositories: ['lichdu29/AlgoCasts']
 }
